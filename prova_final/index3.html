@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrições - Atividade Extracurricular</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Oficinas</a></li>
+                <li><a href="index2.html">Alunos</a></li>
+                <li><a href="index3.html">Inscrições</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="formulario">
+            <h2>Adicionar Inscrição</h2>
+
+            <form id="form-inscricao">
+                <input type="number" id="id" placeholder="ID da Inscrição" required />
+                <input type="date" id="data_inscricao" placeholder="Data da Inscrição" required />
+                <input type="number" id="aluno_id" placeholder="ID do Aluno" required />
+                <input type="number" id="oficina_id" placeholder="ID da Oficina" required />
+                <button type="submit">Adicionar Inscrição</button>
+            </form>
+        </section>
+
+        <section class="lista">
+            <h2>Inscrições Realizadas</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Data</th>
+                        <th>Aluno</th>
+                        <th>Oficina</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Dados de exemplo -->
+                    <tr>
+                        <td>1</td>
+                        <td>2025-09-03</td>
+                        <td>Thomas Fantini</td>
+                        <td>Música</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>2025-05-10</td>
+                        <td>Victor Martins</td>
+                        <td>Música</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>2025-10-31</td>
+                        <td>Richard Chrispim</td>
+                        <td>Artes</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>2025-08-06</td>
+                        <td>Thomas Fantini</td>
+                        <td>Dança</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

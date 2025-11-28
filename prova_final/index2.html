@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Oficinas</a></li>
+                <li><a href="index2.html">Alunos</a></li>
+                <li><a href="index3.html">Inscrições</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="formulario">
+            <h2>Adicionar Aluno</h2>
+
+            <form id="form-aluno">
+                <input type="number" id="id" placeholder="ID do Aluno" required />
+                <input type="text" id="nome" placeholder="Nome do Aluno" required />
+                <input type="text" id="turma" placeholder="Turma (ex: 2B, 3C)" required />
+                <input type="number" id="total_inscricoes" placeholder="Total de Participações" min="0" required />
+                <button type="submit">Adicionar Aluno</button>
+            </form>
+        </section>
+
+        <section class="lista">
+            <h2>Alunos Cadastrados</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Turma</th>
+                        <th>Total de Participações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>1</td>
+                        <td>Thomas Fantini</td>
+                        <td>2B</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Victor Martins</td>
+                        <td>1A</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Richard Chrispim</td>
+                        <td>3C</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</body>
+
+</html>
